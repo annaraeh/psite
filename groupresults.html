@@ -1,0 +1,180 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Boop welcomes you</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+
+</head>
+
+<body style="background:#37474F">
+
+	<div class="sidebar col-xs-2">
+
+		<div class="logo">
+			<a href="welcome.html">
+			<img src="images/boop.png" alt="logo" style="width:98%">
+		</div>
+
+		<div class="top-game-container">
+			<div class="game">
+				<div class="selection">
+				<a href="groupresults.html" style="vertical-align: middle; display: inline-block; margin:15px">Find Group</a><br>
+				</div>
+				<a href="materesults.html" style="vertical-align: middle; display: inline-block; margin:15px">Find Teammate</a><br>
+			</div>
+		</div>
+		<hr style="margin-top:-10px">
+		<div class="whitetext">
+			Frequently Played Games
+		</div>
+		<div class="game-container">
+			<div class="game">
+				<a href="searchlol.html" style="vertical-align: middle; display: inline-block; margin :15px;margin-left:30px">League of Legends</a><br>
+
+				<a href="searchfort.html" style="vertical-align: middle; display: inline-block; margin:15px;margin-left:30px">Fortnite</a><br>
+			</div>
+
+			<!--<div class="game">
+				<div class="square"></div>
+				<a href="overwatch.html">Overwatch</a><br>
+			</div>
+		-->
+	</div>
+	</div>
+
+<div class="col-sm-10" >
+
+	<div class="row pull-right" style="margin-top:20px">
+		<div class="col-sm-12 btn-group">
+			<button class="btn"><a href="profile.html">Profile</a></button>
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				▼
+			</button>
+			<div class="dropdown-menu" id="profmenu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="settings.html" >Settings</a><br>
+				<a class="dropdown-item" href="index.html">Log Out</a><br>
+			</div>
+		</div>
+	</div>
+
+<div class="row col-sm-12" id="myBtnContainer">
+	<h5 style="color:white;display:inline">Filters: </h5>
+  <button class="btn" onclick="filterSelection('LoL')"><b>League of Legends</b></button>
+	<button class="btn" onclick="filterSelection('Fortnite')"><b>Fortnite</b></button>
+	<button class="btn" onclick="filterSelection('Balanced')">Balanced</button>
+	<button class="btn" onclick="filterSelection('Ranked')">Ranked</button>
+  <button class="btn" onclick="filterSelection('Casual')">Casual</button>
+	<button class="btn" onclick="filterSelection('Serious')">Serious</button>
+	<button class="btn" onclick="filterSelection('Super-Troll')">Super-Troll</button>
+	<button class="btn" onclick="filterSelection('Inhouse')">Inhouse</button>
+	<button class="btn active" onclick="filterSelection('all')">Show all</button>
+</div>
+
+	<div class="row">
+		<div class="col-sm-12 results" style="padding-left:15px; margin-right:5px;margin-top:10px">
+			<div class=" col-sm-2"><h4>Game</h4></div>
+			<div class=" col-sm-2"><h4>Group Size</h4></div>
+			<div class=" col-sm-2"><h4>Group Traits</h4></div>
+			<div class=" col-sm-2"><h4>Players</h4></div>
+			<div class=" col-sm-2"><h4>Discord Link</h4></div>
+			<div class=" col-sm-2"><h4>...</h4></div>
+		</div>
+
+		<div class="col-sm-12 results resultsrow1 filterDiv LoL Balanced">
+			<div class=" col-sm-2">League of Legends</div>
+			<div class=" col-sm-2">3/5</div>
+			<div class=" col-sm-2">Balanced</div>
+			<div class=" col-sm-2">Anna<br>Ben<br>Lucy</div>
+			<div class=" col-sm-2"><a href="https://discord.gg/xpHg34a"> <img src="images/Discord.png" style="width:60px; height:60px;"> </a> </div>
+			<div class=" col-sm-2">...</div>
+		</div>
+
+		<div class="col-sm-12 results resultsrow2 filterDiv LoL Ranked">
+			<div class=" col-sm-2">League of Legends</div>
+			<div class=" col-sm-2">2/5</div>
+			<div class=" col-sm-2">Ranked</div>
+			<div class=" col-sm-2">Logan<br>Jordan</div>
+			<div class=" col-sm-2"><a href="https://discord.gg/xpHg34a"> <img src="images/Discord.png" style="width:60px; height:60px;"> </a> </div>
+			<div class=" col-sm-2">...</div>
+		</div>
+
+		<div class="col-sm-12 results resultsrow1 filterDiv LoL Casual">
+			<div class=" col-sm-2">League of Legends</div>
+			<div class=" col-sm-2">4/5</div>
+			<div class=" col-sm-2">Casual</div>
+			<div class=" col-sm-2">Anna<br>Ben<br>Lucy<br>Abby</div>
+			<div class=" col-sm-2"><a href="https://discord.gg/xpHg34a"> <img src="images/Discord.png" style="width:60px; height:60px;"> </a> </div>
+			<div class=" col-sm-2">...</div>
+		</div>
+
+		<div class="col-sm-12 results resultsrow2 filterDiv Fortnite Serious">
+			<div class=" col-sm-2">Fortnite</div>
+			<div class=" col-sm-2">3/4</div>
+			<div class=" col-sm-2">Serious</div>
+			<div class=" col-sm-2">Ben<br>Austin<br>Logan</div>
+			<div class=" col-sm-2"><a href="https://discord.gg/xpHg34a"> <img src="images/Discord.png" style="width:60px; height:60px;"> </a> </div>
+			<div class=" col-sm-2">...</div>
+		</div>
+
+		<div class="col-sm-12 results resultsrow1 filterDiv Fortnite Casual Super-Troll">
+			<div class=" col-sm-2">Fortnite</div>
+			<div class=" col-sm-2">2/4</div>
+			<div class=" col-sm-2">Casual</div>
+			<div class=" col-sm-2">Ben<br>Jackie</div>
+			<div class=" col-sm-2"><a href="https://discord.gg/xpHg34a"> <img src="images/Discord.png" style="width:60px; height:60px;"> </a> </div>
+			<div class=" col-sm-2">...</div>
+		</div>
+
+
+		<div class="col-sm-12 results resultsrow2 filterDiv LoL Super-Troll">
+			<div class=" col-sm-2">League of Legends</div>
+			<div class=" col-sm-2">3/5</div>
+			<div class=" col-sm-2">Super-Troll</div>
+			<div class=" col-sm-2">Frank<br>Jane<br>Ted</div>
+			<div class=" col-sm-2"><a href="https://discord.gg/xpHg34a"> <img src="images/Discord.png" style="width:60px; height:60px;"> </a> </div>
+			<div class=" col-sm-2">...</div>
+		</div>
+
+		<div class="col-sm-12 results resultsrow1 filterDiv LoL Inhouse">
+			<div class=" col-sm-2">League of Legends</div>
+			<div class=" col-sm-2">8/10</div>
+			<div class=" col-sm-2">Inhouse</div>
+			<div class=" col-sm-2">Alex<br>Jessica<br>Fred<br>...</div>
+			<div class=" col-sm-2"><a href="https://discord.gg/xpHg34a"> <img src="images/Discord.png" style="width:60px; height:60px;"> </a> </div>
+			<div class=" col-sm-2">...</div>
+		</div>
+
+		<div class="col-sm-12 results resultsrow2 filterDiv Fortnite Super-Troll">
+			<div class=" col-sm-2">Fortnite</div>
+			<div class=" col-sm-2">1/4</div>
+			<div class=" col-sm-2">Super-Troll</div>
+			<div class=" col-sm-2">Suzzy</div>
+			<div class=" col-sm-2"><a href="https://discord.gg/xpHg34a"> <img src="images/Discord.png" style="width:60px; height:60px;"> </a> </div>
+			<div class=" col-sm-2">...</div>
+		</div>
+	</div>
+
+
+</div>
+</div>
+
+<!-- include JavaScript near the end of the HTML file -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/handlebars-v4.0.11.js"></script>
+<script src="js/lab4.js"></script>
+
+</body>
+</html>

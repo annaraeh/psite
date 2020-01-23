@@ -1,0 +1,290 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */
+	color: #CC00AA;
+}
+
+/* this style exists to make it obvious that you've successfully linked
+   the CSS to the page. feel free to remove it once the link is working. */
+	 @font-face {
+	   font-family: 'Avenir';
+	   src: url("http://www.yoursite.com/fonts/Avenir.otf"); /* File to be stored at your site */
+	   }
+
+body {
+     border: 0px;
+		 font-family: "Avenir" !important;
+}
+
+.sidebar
+{
+	background-color: #263238;
+	height:100vh;
+}
+
+.main
+{
+	height: 100vh;
+	background-color: pink;
+}
+
+.find
+{
+	background-color: white;
+	align: center;
+}
+
+.links
+{
+	font-size: 32px;
+	font-style: italic;
+
+	background-color: black;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: relative;
+}
+
+
+ .big-checkbox {width: 30px; height: 30px;}
+
+.jumbotron {
+	position: relative;
+	background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     background-color: gray;
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;
+}
+
+.jumbotron p {
+     color: #6e6e6e;
+}
+
+.project a {
+     text-align: center;
+}
+
+
+.logo {
+	padding-top:40px;
+	width:100%;
+}
+
+
+
+.searchtext{
+	color: white;
+}
+
+.top-game-container{
+	font-family: "Avenir" !important;
+	font-weight: 700;
+	margin-left:-15px;
+	margin-right:-15px;
+}
+
+.top-game-container a{
+	color: white;
+	line-height: normal;
+	font-size: 16px;
+}
+
+.game-container{
+	font-family: "Avenir" !important;
+	font-weight: 700;
+	margin-left:-15px;
+	margin-right:-15px;
+}
+
+
+.game-container a{
+	color: #B0BEC5;
+	line-height: normal;
+	font-size: 16px;
+}
+
+.whitetext{
+	color: #668695;
+	font-weight: 500;
+	padding-top:10px;
+}
+
+.selection {
+	background-color:#455A64;
+	width: 100%;
+	height: 2%;
+}
+
+.game{
+	padding-top:15px;
+	padding-bottom:20px;
+}
+
+
+.square {
+	display: inline-block;
+	position:absolute;
+
+  height: 20px;
+  width: 20px;
+  background-color: #CFD8DC;
+	border-radius: 7px;
+
+}
+
+.results
+{
+	color: #CFD8DC;
+}
+
+.resultsrow1
+{
+	background-color: #4b5960;
+	padding: 5px;
+	margin-right:5px;
+}
+
+.resultsrow2
+{
+	background-color: #5e6b72;
+	padding: 5px;
+	margin-right:5px;
+}
+
+.results-container
+{
+	overflow-y: scroll;
+}
+
+.circle {
+	display: inline-block;
+	/*position:absolute;*/
+
+  height: 30px;
+  width: 30px;
+  background-color: #CFD8DC;
+	border-radius: 7px;
+}
+
+.profile{
+	color:#fff;
+	position:inherit;
+	right:50px;
+
+}
+
+#menu{
+	position:absolute;
+	right:50px;
+}
+
+#profmenu{
+	text-align:center;
+	padding:7px;
+	min-width:100px;
+	margin-left:15px;
+}
+
+.ex{
+	padding:25px;
+}
+
+/* Thanks w3 schools! https://www.w3schools.com/howto/howto_js_filter_elements.asp */
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/*form styling */
+.container-form {
+  width: 80%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: rgba(255,255,255,0.8);
+
+
+}
+
+.wrap-form-control {
+  width: 80%;
+  position: relative;
+  border-bottom: 2px solid rgba(255,255,255,0.24);
+  margin-bottom: 27px;
+}
+
+.form-control{
+	display: block;
+  width: 100%;
+  background: transparent;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  padding: 0 5px;
+	border:none;
+	box-shadow:none;
+}
+
+.focus-form-control {
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+#examplePassword{
+  -webkit-text-security: disc;
+}

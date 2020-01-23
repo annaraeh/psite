@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Boop welcomes you</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body style="background:#37474F">
+	<div class="sidebar col-xs-2">
+
+		<div class="logo">
+			<a href="welcome.html">
+			<img src="images/boop.png" alt="logo" style="width:98%">
+		</div>
+
+		<div class="top-game-container">
+			<div class="game">
+				<a href="groupresults.html" style="vertical-align: middle; display: inline-block; margin:15px">Find Group</a><br>
+				<a href="materesults.html" style="vertical-align: middle; display: inline-block; margin:15px">Find Teammate</a><br>
+			</div>
+		</div>
+		<hr style="margin-top:-10px">
+		<div class="whitetext">
+			Frequently Played Games
+		</div>
+		<div class="game-container">
+			<div class="game">
+				<a href="searchlol.html" style="vertical-align: middle; display: inline-block; margin :15px;margin-left:30px">League of Legends</a><br>
+
+				<a href="searchfort.html" style="vertical-align: middle; display: inline-block; margin:15px;margin-left:30px">Fortnite</a><br>
+			</div>
+
+			<!--<div class="game">
+				<div class="square"></div>
+				<a href="overwatch.html">Overwatch</a><br>
+			</div>
+		-->
+	</div>
+	</div>
+
+	<div class="col-sm-10" >
+
+		<div class="row pull-right" style="margin-left:10px">
+			<div class="col-sm-12 btn-group">
+				<button class="btn"><a href="profile.html">Profile</a></button>
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					▼
+				</button>
+				<div class="dropdown-menu" id="profmenu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="settings.html" >Settings</a><br>
+					<a class="dropdown-item" href="index.html">Log Out</a><br>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3"></div>
+
+		<div class="col-sm-6" style="background: #485c66">
+			<div class="row pull-right" style="margin-top:5px">
+				<h3><a class="ex" href="welcome.html"> X </a></h3>
+		</div>
+			<h1 style="color:#fff">Find <div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Group ▼
+				</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="matesearch.html">Teammate</a>
+				</div>
+			</div> based on ... </h1></center>
+			<div>
+
+				<div class="form-check">
+					<input class="form-check-input big-checkbox" type="checkbox" value="" id="defaultCheck1" >
+					<label class="form-check-label" for="defaultCheck2">
+						<h3 style="color:#fff">Group Size</h3> <input placeholder="5/8">
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input  big-checkbox" type="checkbox" value="" id="defaultCheck1">
+					<label class="form-check-label" for="defaultCheck1">
+						<h3 style="color:#fff">Troll Level   <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></h3>
+
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input big-checkbox" type="checkbox" value="" id="defaultCheck1" >
+					<label class="form-check-label" for="defaultCheck2">
+						<h3 style="color:#fff">Rank</h3> <input placeholder="Lvl 27">
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input  big-checkbox" type="checkbox" value="" id="defaultCheck2" >
+					<label class="form-check-label" for="defaultCheck2">
+						<h3>Region</h3>
+						<select class="form-control form-control-sm">
+							<option>North</option>
+							<option>South</option>
+							<option>East</option>
+							<option>West</option>
+						</select>
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input  big-checkbox" type="checkbox" value="" id="defaultCheck2" >
+					<label class="form-check-label" for="defaultCheck2">
+						<h3 style="color:#fff">Schedule</h3>
+						<select class="form-control form-control-sm"></h3>
+							<option>Select a preset schedule</option>
+							<option>Work Sched</option>
+							<option>School Sched</option>
+						</select>
+					</label>
+				</div>
+
+				<center><a class="btn btn-primary" href="groupresults.html" role="button"style="margin-bottom:15px">Search</a> <br>
+					<div class="slidecontainer">
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- include JavaScript near the end of the HTML file -->
+			<script src="https://code.jquery.com/jquery.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+		<script src="js/handlebars-v4.0.11.js"></script>
+<script src="js/lab4.js"></script>
+
+</body>
+		</html>
